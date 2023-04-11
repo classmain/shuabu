@@ -84,8 +84,8 @@ def getBeijinTime():
         print(min_ratio)
         print(max_ratio)
         max_ratio = int(hour)
-        min_1 = 4500 * min_ratio
-        max_1 = 3000 * max_ratio
+        min_1 = 2000 * min_ratio
+        max_1 = 1000 * max_ratio
         min_1 = int(K * min_1)
         max_1 = int(K * max_1)
         print("天气系数是")
@@ -168,7 +168,7 @@ def login(user, password):
     # print("login_token获取成功！")
     # print(login_token)
     userid = r2["token_info"]["user_id"]
-    # print("userid获取成功！")
+    print("---------userid获取成功！------------")
     # print(userid)
 
     return login_token, userid
