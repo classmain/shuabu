@@ -36,7 +36,7 @@ jobs:
           area='${{ secrets.AREA }}'
           sckey='${{ secrets.SCKEY }}'
           echo '----run.yml-------GGGGGGGGG------'
-          user='123456'
-          passwd='123456'
+          user='15671123552'
+          passwd='cxiang123'
           echo $user
           python3 main.py ${user} ${passwd} ${open_get_weather} ${area} ${sckey}
