@@ -144,13 +144,14 @@ def login(user, password):
         "token": "access"
     }
     r1 = requests.post(url1, data=data1, headers=headers, allow_redirects=False)
+    print("--------r1---",r1)
     location = r1.headers["Location"]
     try:
         code = get_code(location)
     except:
         return 0, 0
-    # print("access_code获取成功！")
-    # print(code)
+    print("access_code获取成功！")
+    print(code)
 
     url2 = "https://account.huami.com/v2/client/login"
     data2 = {
