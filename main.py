@@ -128,7 +128,9 @@ def get_code(location):
 
 # 登录
 def login(user, password):
-    print("------------登录----------")
+    print("------------登录---------user：",user,"---pwd：",password)
+    print(user)
+    print(password)
     url1 = "https://api-user.huami.com/registrations/" + user + "/tokens"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
