@@ -122,11 +122,13 @@ def getBeijinTime():
 def get_code(location):
     code_pattern = re.compile("(?<=access=).*?(?=&)")
     code = code_pattern.findall(location)[0]
+    print("------------获取登录code----------")
     return code
 
 
 # 登录
 def login(user, password):
+    print("------------登录----------")
     url1 = "https://api-user.huami.com/registrations/" + user + "/tokens"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
